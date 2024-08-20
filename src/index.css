@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login {
+  height: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  width: 100px;
+}
+.login:focus {
+  outline: none !important;
+  border-color: bisque;
+  box-shadow: 0 0 5px bisque;
+}
+.login_btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 2rem;
+  font-size: 1rem;
+}
+
+.greet {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+main {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.main_balance {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.cb_balance {
+  font-size: 2rem;
+}
+.cbp {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.movements {
+  height: 550px;
+  min-width: 60%;
+  background-color: white;
+  border-top-left-radius: 15px;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.movements .movements_row:first-child {
+  border-top-left-radius: 15px;
+}
+.movements_row {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-bottom: 1px solid #dbd6d6;
+  height: 4rem;
+  align-items: center;
+}
+.mov_amount {
+  justify-content: space-between;
+}
+.mov_spacing {
+  display: flex;
+  gap: 1rem;
+}
+.mov_withdrawal {
+  border-radius: 15px;
+  font-size: 15px;
+  background-image: linear-gradient(to right, red, rgb(91, 75, 75));
+  width: 120px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.mov_deposit {
+  border-radius: 15px;
+  font-size: 15px;
+  background-color: #63e38b;
+  background-image: linear-gradient(to right, #1de65d, #3753c3);
+  width: 110px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.flex_box {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.container {
+  display: grid;
+  grid: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.menu_container {
+  display: grid;
+  min-width: 350px;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  margin-right: 2rem;
+  font-weight: 600;
+  border-radius: 15px;
+}
+.transfer {
+  background-image: linear-gradient(to right, #d1e328, #feb47b);
+}
+.loan {
+  background-image: linear-gradient(to right, #afff5f, #4bd1c8);
+}
+.close {
+  background-image: linear-gradient(to right, #c74e4e, #feb47b);
+}
+.form {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 2.5fr;
+  gap: 1rem;
+  margin-right: 2rem;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.operation_input {
+  min-width: 7rem;
+  height: 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.897);
+}
+
+.operation_input:focus {
+  outline: none !important;
+  border-color: bisque;
+  box-shadow: 0 0 5px bisque;
+}
+.operation_btn {
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-left: -4rem;
+}
+
+.sum_flex {
+  display: flex;
+  gap: 0.5rem;
+}
+span {
+  font-size: 1rem;
+  color: black;
+}
+.summary_in {
+  font-size: 2rem;
+  color: #1de65d;
+}
+.summary_out {
+  font-size: 2rem;
+  color: red;
+}
+.summary_interest {
+  font-size: 2rem;
+  color: #1de65d;
+}
+button {
+  cursor: pointer;
+}
+.btn_sort {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+input {
+  text-align: center;
+}
