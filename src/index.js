@@ -32,47 +32,7 @@
   };
 
   const accounts = [
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    account1,
+  account1,
     account2,
     account3,
     account4,
@@ -149,8 +109,8 @@
         .reduce((mov, cur) => (mov += cur));
       account.withdrawals = account?.movements
         .filter((move) => move < 0)
-        .reduce((mov, cur) => (mov += cur));
-      account.balance = account?.movements.reduce((mov, cur) => (mov += cur));
+        .reduce((mov, cur) => (mov += cur),0);
+      account.balance = account?.movements.reduce((mov, cur) => (mov += cur),0);
       const interest =
         (account?.movements
           .filter((move) => move > 50)
